@@ -1,4 +1,6 @@
-export const Navigation = (props) => {
+import { NavLink } from "react-router-dom";
+
+const App = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,11 +18,10 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-
+          <NavLink className='navbar-brand page-scroll' to='/' >
             <img src='img/logo.png' width={80} className='img-responsive' alt='' />{' '}
             SECRETS OF INK
-          </a>{' '}
+          </NavLink>{' '}
         </div>
 
         <div
@@ -29,9 +30,9 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
+              <NavLink to='/packages' className='page-scroll'>
+                Packages
+              </NavLink>
             </li>
             <li>
               <a href='#about' className='page-scroll'>
@@ -44,9 +45,9 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href='#portfolio' className='page-scroll'>
+              <NavLink to='/gallery' activeClassName="active" className='page-scroll'>
                 Gallery
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href='#testimonials' className='page-scroll'>
@@ -69,3 +70,5 @@ export const Navigation = (props) => {
     </nav>
   )
 }
+
+export default App

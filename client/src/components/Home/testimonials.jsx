@@ -1,4 +1,6 @@
 export const Testimonials = (props) => {
+
+  console.log(props);
   return (
     <div id='testimonials'>
       <div className='container'>

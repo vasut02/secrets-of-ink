@@ -149,11 +149,9 @@ export const Contact = (props) => {
       </div>
       <div id='footer'>
         <div className='container text-center'>
-          <p>
-            &copy; 2020 SECRETS OF INK{' '}
-            {/* <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a> */}
+          <p>            
+            Copyrights &copy; 2021 | All Rights Reserved by Secrets Of Ink Publication
+            In Partnership With Secrets Of Ink Press
           </p>
         </div>
       </div>
